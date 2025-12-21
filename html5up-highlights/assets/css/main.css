@@ -3142,3 +3142,47 @@ input, select, textarea {
 				}
 
 	}
+
+	.art-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+/* images */
+.art-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* subtle hover polish */
+.art-grid img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* mobile: single column */
+@media screen and (max-width: 736px) {
+  .art-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.video-embed {
+  width: 100%;
+  max-width: 920px;
+  margin: 2rem auto 0;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.video-embed iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
