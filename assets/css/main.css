@@ -3244,4 +3244,10 @@ input, select, textarea {
   }
 }
 
+/* Mobile: tighten social icon spacing in header */
+@media screen and (max-width: 736px) {
+  #header ul.icons li {
+    padding: 0 0.35rem;
+  }
+}
 
